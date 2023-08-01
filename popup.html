@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+    <title>Proxy Client</title>
+</head>
+<body>
+    <!-- <h4 id="title">PROXY CLIENT</h4> -->
+    <select id="type">
+        <option value="direct" selected>Select proxy type</option>
+        <option value="http">HTTP</option>
+        <option value="https">HTTPS</option>
+        <option value="socks">SOCKS5</option>
+        <option value="socks4">SOCKS4</option>
+    </select>
+    <input type="text" id="host" placeholder="Host">
+    <input type="number" id="port" placeholder="Port">
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <div>
+        <input type="checkbox" name="proxyDNS" id="proxyDNS">
+        <label for="proxyDNS">Remote DNS</label>
+    </div>
+    <div>
+        <input type="checkbox" name="ignoreLocal" id="ignoreLocal">
+        <label for="ignoreLocal">Ignore localhost</label>
+    </div>
+    <button id="connect">Connect</button>
+    <button id="disconnect">Disconnect</button>
+</body>
+<script src="popup.js" defer></script>
+</html>

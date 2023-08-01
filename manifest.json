@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Proxy Client",
+  "version": "1.0",
+  "permissions": [
+    "storage",
+    "proxy",
+    "<all_urls>",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/off.svg",
+    "default_title": "Proxy Client"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  }
+}

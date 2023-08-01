@@ -1,0 +1,58 @@
+body
+{
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    background: #2B2A33;
+}
+input, select
+{
+    margin: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #D9D9D9;
+    color: #D9D9D9;
+    background: transparent;
+}
+input:focus, select:focus
+{
+    border-bottom: 2px solid #FFFFB3;
+}
+input[type="checkbox"]:focus
+{
+    outline: 0.5px solid #FFFFB3;
+}
+
+div
+{
+    font-size: smaller;
+    margin: 5px;
+    color: #D9D9D9;
+}
+
+button
+{
+    margin: 5px;
+    padding: 5px;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #D9D9D9;
+    color: #D9D9D9;
+    background: transparent;
+}
+/* #connect:focus
+{
+    border: 2px solid #196666;
+}
+#disconnect:focus
+{
+    border: 2px solid #990000;
+} */
+#connect:focus, #connect:hover
+{
+    background: #196666;
+}
+#disconnect:focus, #disconnect:hover
+{
+    background:#990000;
+}
